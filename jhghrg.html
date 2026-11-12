@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Tabelas HTML</title>
+    <style>
+        /* Tira a linha dupla das bordas */
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        /* Dá um espaço entre os títulos */
+        h1 {
+            margin-top: 40px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        /* Deixa o texto das tabelas mais bonito */
+        th, td {
+            padding: 8px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 1 -->
+    <!-- ========================================== -->
+    <h1>Exercício 1</h1>
+    <table border="2" bordercolor="#4CAF50">
+        <tr bgcolor="#C8E6C9">
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ted</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        <tr bgcolor="#F1F8E9">
+            <td>Ralf</td>
+            <td>26</td>
+            <td>Designer</td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 2 -->
+    <!-- ========================================== -->
+    <h1>Exercício 2</h1>
+    <table border="2" bordercolor="#2196F3">
+        <tr bgcolor="#BBDEFB">
+            <th>Nome</th>
+            <th colspan="2">Telefones</th>
+        </tr>
+        <tr>
+            <td>Ted</td>
+            <td>8888-8888</td>
+            <td>9999-9999</td>
+        </tr>
+        <tr bgcolor="#E3F2FD">
+            <td>Junior</td>
+            <td>1111-1111</td>
+            <td>2222-2222</td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 3 -->
+    <!-- ========================================== -->
+    <h1>Exercício 3 - Campeonato Brasileiro</h1>
+    <table border="2" bordercolor="#FF9800">
+        <tr bgcolor="#FFE0B2">
+            <th>Time</th>
+            <th>Pontos</th>
+        </tr>
+        <tr>
+            <td rowspan="3" bgcolor="#FFCC80"><b>Série A</b></td>
+            <td>Internacional</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Juventude</td>
+            <td>40</td>
+        </tr>
+        <tr bgcolor="#FFF3E0">
+            <td>Flamengo</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 4 -->
+    <!-- ========================================== -->
+    <h1>Exercício 4 - Campeonato Brasileiro (Série A e B)</h1>
+    <table border="2" bordercolor="#9C27B0">
+        <tr bgcolor="#E1BEE7">
+            <th>Time</th>
+            <th>Pontos</th>
+            <th>Time</th>
+            <th>Pontos</th>
+        </tr>
+        <tr>
+            <td rowspan="3" bgcolor="#CE93D8"><b>Série A</b></td>
+            <td>Internacional</td>
+            <td>50</td>
+            <td rowspan="3" bgcolor="#A5D6A7"><b>Série B</b></td>
+            <td>Grêmio</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Juventude</td>
+            <td>40</td>
+            <td>Corinthians</td>
+            <td>40</td>
+        </tr>
+        <tr bgcolor="#F3E5F5">
+            <td>Flamengo</td>
+            <td>30</td>
+            <td>Flamengo</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 5 -->
+    <!-- ========================================== -->
+    <h1>Exercício 5 - Vendas Trimestrais</h1>
+    <table border="2" bordercolor="#00BCD4">
+        <tr>
+            <th colspan="4" bgcolor="#0097A7" style="color: white;">Vendas Trimestrais</th>
+        </tr>
+        <tr>
+            <td rowspan="3" bgcolor="#FFEB3B"><b>2010</b></td>
+            <td>144.000</td>
+            <td rowspan="3" bgcolor="#8BC34A"><b>2009</b></td>
+            <td>188.000</td>
+        </tr>
+        <tr>
+            <td>139.580</td>
+            <td>179.580</td>
+        </tr>
+        <tr bgcolor="#E0F7FA">
+            <td>254.900</td>
+            <td>298.500</td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 6 -->
+    <!-- ========================================== -->
+    <h1>Exercício 6 - Tabela de Serviços Mecânicos</h1>
+    <table border="2" bordercolor="#607D8B">
+        <tr>
+            <th colspan="5" bgcolor="#455A64" style="color: white;">Tabela de Serviços Mecânicos</th>
+        </tr>
+        <tr bgcolor="#CFD8DC">
+            <th rowspan="5">Nacionais</th>
+            <th>Veículos</th>
+            <th>Serviço</th>
+            <th>Tempo Previsto</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>Caminhonete S10</td>
+            <td>Suspensão</td>
+            <td>3 horas e 25 minutos</td>
+            <td>350,00</td>
+        </tr>
+        <tr bgcolor="#ECEFF1">
+            <td>Caminhonete Ranger</td>
+            <td>Freio</td>
+            <td>3 horas e 45 minutos</td>
+            <td>200,00</td>
+        </tr>
+        <tr>
+            <td>Caminhonete Hilux</td>
+            <td>Troca de Bateria</td>
+            <td>30 minutos</td>
+            <td>25,00</td>
+        </tr>
+        <tr bgcolor="#ECEFF1">
+            <td>Caminhonete D10</td>
+            <td>Alinhamento</td>
+            <td>1 hora e 40 minutos</td>
+            <td>220,00</td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 7 -->
+    <!-- ========================================== -->
+    <h1>Exercício 7 - Ficha Técnica</h1>
+    <table border="2" bordercolor="#F44336">
+        <tr>
+            <th colspan="3" bgcolor="#B71C1C" style="color: white;">Ficha técnica</th>
+        </tr>
+        <tr>
+            <td rowspan="5" bgcolor="#FFCDD2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Volkswagen_Polo_GTI_%282018%29.jpg/320px-Volkswagen_Polo_GTI_%282018%29.jpg" width="200">
+            </td>
+            <td bgcolor="#FFEBEE"><b>Nome</b></td>
+            <td>Polo GTI</td>
+        </tr>
+        <tr>
+            <td bgcolor="#FFEBEE"><b>Valor:</b></td>
+            <td>99 800 reais</td>
+        </tr>
+        <tr>
+            <td bgcolor="#FFEBEE"><b>Garantia</b></td>
+            <td>1 ano sem limite de km</td>
+        </tr>
+        <tr>
+            <td bgcolor="#FFEBEE"><b>Consumo Cidade</b></td>
+            <td>9,7</td>
+        </tr>
+        <tr>
+            <td bgcolor="#FFEBEE"><b>Consumo estrada (km/l)</b></td>
+            <td>13,1</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="left" bgcolor="#FFF9C4">
+                O novo hatch da VW deve chegar à Europa em 2009 e sua versão esportiva vem um ano depois. O modelo deve utilizar a plataforma PQ25. A versão atual (foto) utiliza a PQ 24, que também equipa nossos Gol e Fox. A nova plataforma já é utilizada no espanhol Seat Ibiza. Também graças à PQ25 os brasileiros receberam o conjunto de suspensão dianteira do novo Gol. O motor que equipará o novo Polo GTI deve ser um 1.4 turbo TSI (com injeção direta de combustível) a gasolina e que produz 180 cv de potência. E não é só este número que impressiona: a expectativa é de que o propulsor deve entregar um consumo de cerca de 14,2 km/l.
+            </td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 8 (Corrigido e Colorido) -->
+    <!-- ========================================== -->
+    <h1>Exercício 8 - Residenciais Viver Serra</h1>
+    <table border="2" bordercolor="#3F51B5">
+        <tr>
+            <th colspan="5" bgcolor="#1A237E" style="color: white;">Venha Morar em Nossos Belos Residenciais - Viver Serra</th>
+        </tr>
+        <tr bgcolor="#C5CAE9">
+            <th colspan="3">Apartamentos</th>
+            <th colspan="2">Localização</th>
+        </tr>
+        <tr>
+            <td colspan="3">Laranjeiras - 4 min.</td>
+            <td colspan="2">Manguinhos - 2 min.</td>
+        </tr>
+        <tr bgcolor="#E8EAF6">
+            <td colspan="3">Vitória - 8 min.</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr bgcolor="#C5CAE9">
+            <th>2 Quartos</th>
+            <th>3 Quartos</th>
+            <th>4 Quartos</th>
+            <th colspan="2">Corretor On-Line</th>
+        </tr>
+        <tr>
+            <td>1 Suite</td>
+            <td>2 Suite</td>
+            <td>3 Suites</td>
+            <td>3333-2333</td>
+            <td>9999-9969</td>
+        </tr>
+        <tr bgcolor="#E8EAF6">
+            <td colspan="3" align="left"><b>Lazer:</b> Piscina, Salão de Festas, Quadra Poliesportivas</td>
+            <td colspan="2">8888-8868</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="left"><b>Pronto Para Morar:</b> LANÇAMENTO</td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+
+    <!-- ========================================== -->
+    <!-- EXERCÍCIO 9 -->
+    <!-- ========================================== -->
+    <h1>Exercício 9 - Tabela com Colgroup</h1>
+    <table border="2" bordercolor="#795548">
+        <colgroup>
+            <col bgcolor="#FFCDD2"> <!-- Vermelho claro -->
+            <col bgcolor="#FFF9C4"> <!-- Amarelo claro -->
+            <col bgcolor="#B3E5FC"> <!-- Azul claro -->
+        </colgroup>
+        <tr bgcolor="#D7CCC8">
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ted</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Junior</td>
+            <td>26</td>
+            <td>Escritor</td>
+        </tr>
+    </table>
+
+</body>
+</html>
